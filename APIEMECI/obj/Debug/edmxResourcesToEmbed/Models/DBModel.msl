@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmeciModelStoreContainer" CdmEntityContainer="EmeciEntities">
+    <EntitySetMapping Name="DatosTarjeta">
+      <EntityTypeMapping TypeName="EmeciModel.DatosTarjeta">
+        <MappingFragment StoreEntitySet="DatosTarjeta">
+          <ScalarProperty Name="noTarjeta" ColumnName="noTarjeta" />
+          <ScalarProperty Name="Coordenada" ColumnName="Coordenada" />
+          <ScalarProperty Name="Dato" ColumnName="Dato" />
+          <ScalarProperty Name="iddatostarjeta" ColumnName="iddatostarjeta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paciente">
+      <EntityTypeMapping TypeName="EmeciModel.Paciente">
+        <MappingFragment StoreEntitySet="Paciente">
+          <ScalarProperty Name="IdRegistro" ColumnName="IdRegistro" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="Escolaridad" ColumnName="Escolaridad" />
+          <ScalarProperty Name="idPaciente" ColumnName="idPaciente" />
+          <ScalarProperty Name="NoTarjeta" ColumnName="NoTarjeta" />
+          <ScalarProperty Name="grupoRH" ColumnName="grupoRH" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="HospitalNacer" ColumnName="HospitalNacer" />
+          <ScalarProperty Name="LugarNacer" ColumnName="LugarNacer" />
+          <ScalarProperty Name="AbortosPrevios" ColumnName="AbortosPrevios" />
+          <ScalarProperty Name="PesoNacer" ColumnName="PesoNacer" />
+          <ScalarProperty Name="TallaNacer" ColumnName="TallaNacer" />
+          <ScalarProperty Name="PerCefalicoNacer" ColumnName="PerCefalicoNacer" />
+          <ScalarProperty Name="AlergiaMedicina" ColumnName="AlergiaMedicina" />
+          <ScalarProperty Name="AlergiaOtros" ColumnName="AlergiaOtros" />
+          <ScalarProperty Name="Patologia" ColumnName="Patologia" />
+          <ScalarProperty Name="telefonooficina" ColumnName="telefonooficina" />
+          <ScalarProperty Name="Etapa" ColumnName="Etapa" />
+          <ScalarProperty Name="TipoEscolaridad" ColumnName="TipoEscolaridad" />
+          <ScalarProperty Name="otraescolaridad" ColumnName="otraescolaridad" />
+          <ScalarProperty Name="EmbarazoNo" ColumnName="EmbarazoNo" />
+          <ScalarProperty Name="TipoEmbarazo" ColumnName="TipoEmbarazo" />
+          <ScalarProperty Name="EmbarazoParto" ColumnName="EmbarazoParto" />
+          <ScalarProperty Name="tipodistocia" ColumnName="tipodistocia" />
+          <ScalarProperty Name="tipodistociamencione" ColumnName="tipodistociamencione" />
+          <ScalarProperty Name="motivodistocia" ColumnName="motivodistocia" />
+          <ScalarProperty Name="motivodistociamencione" ColumnName="motivodistociamencione" />
+          <ScalarProperty Name="CalApgarMin" ColumnName="CalApgarMin" />
+          <ScalarProperty Name="CalApgar5Min" ColumnName="CalApgar5Min" />
+          <ScalarProperty Name="CalSilverMin" ColumnName="CalSilverMin" />
+          <ScalarProperty Name="CalSilver5Min" ColumnName="CalSilver5Min" />
+          <ScalarProperty Name="Tamizneonatal" ColumnName="Tamizneonatal" />
+          <ScalarProperty Name="NoFolioTamiz" ColumnName="NoFolioTamiz" />
+          <ScalarProperty Name="CompINM" ColumnName="CompINM" />
+          <ScalarProperty Name="CompINMManejo" ColumnName="CompINMManejo" />
+          <ScalarProperty Name="CompMed" ColumnName="CompMed" />
+          <ScalarProperty Name="CompMedManejo" ColumnName="CompMedManejo" />
+          <ScalarProperty Name="lactanciaMat" ColumnName="lactanciaMat" />
+          <ScalarProperty Name="tipolactancia" ColumnName="tipolactancia" />
+          <ScalarProperty Name="nombreformula" ColumnName="nombreformula" />
+          <ScalarProperty Name="motivoreduccion" ColumnName="motivoreduccion" />
+          <ScalarProperty Name="motivoSuspension" ColumnName="motivoSuspension" />
+          <ScalarProperty Name="fechaConsultaPed" ColumnName="fechaConsultaPed" />
+          <ScalarProperty Name="AntecedentePerionatal" ColumnName="AntecedentePerionatal" />
+          <ScalarProperty Name="rubeola" ColumnName="rubeola" />
+          <ScalarProperty Name="sarampion" ColumnName="sarampion" />
+          <ScalarProperty Name="tosferina" ColumnName="tosferina" />
+          <ScalarProperty Name="roseola" ColumnName="roseola" />
+          <ScalarProperty Name="varicela" ColumnName="varicela" />
+          <ScalarProperty Name="EnfInfectocontagiosas" ColumnName="EnfInfectocontagiosas" />
+          <ScalarProperty Name="EnfContagiosas" ColumnName="EnfContagiosas" />
+          <ScalarProperty Name="EnfContagiosasyEvol" ColumnName="EnfContagiosasyEvol" />
+          <ScalarProperty Name="NombrePadre" ColumnName="NombrePadre" />
+          <ScalarProperty Name="ApellPaternoPadre" ColumnName="ApellPaternoPadre" />
+          <ScalarProperty Name="ApellMaternoPadre" ColumnName="ApellMaternoPadre" />
+          <ScalarProperty Name="NacimientoPadre" ColumnName="NacimientoPadre" />
+          <ScalarProperty Name="EstadoCivilPadre" ColumnName="EstadoCivilPadre" />
+          <ScalarProperty Name="EscolaridadPadre" ColumnName="EscolaridadPadre" />
+          <ScalarProperty Name="DetalleEscolaridadPadre" ColumnName="DetalleEscolaridadPadre" />
+          <ScalarProperty Name="SaludPadre" ColumnName="SaludPadre" />
+          <ScalarProperty Name="DetalleSaludPadre" ColumnName="DetalleSaludPadre" />
+          <ScalarProperty Name="toxicomaniaPadre" ColumnName="toxicomaniaPadre" />
+          <ScalarProperty Name="DetalletoxicomaniaPadre" ColumnName="DetalletoxicomaniaPadre" />
+          <ScalarProperty Name="AntecedentePadre" ColumnName="AntecedentePadre" />
+          <ScalarProperty Name="OtrosAntecedentesPadre" ColumnName="OtrosAntecedentesPadre" />
+          <ScalarProperty Name="NombreMadre" ColumnName="NombreMadre" />
+          <ScalarProperty Name="ApellPaternoMadre" ColumnName="ApellPaternoMadre" />
+          <ScalarProperty Name="ApellMaternoMadre" ColumnName="ApellMaternoMadre" />
+          <ScalarProperty Name="NacimientoMadre" ColumnName="NacimientoMadre" />
+          <ScalarProperty Name="EstadoCivilMadre" ColumnName="EstadoCivilMadre" />
+          <ScalarProperty Name="EscolaridadMadre" ColumnName="EscolaridadMadre" />
+          <ScalarProperty Name="DetalleEscolaridadMadre" ColumnName="DetalleEscolaridadMadre" />
+          <ScalarProperty Name="SaludMadre" ColumnName="SaludMadre" />
+          <ScalarProperty Name="DetalleSaludMadre" ColumnName="DetalleSaludMadre" />
+          <ScalarProperty Name="toxicomaniaMadre" ColumnName="toxicomaniaMadre" />
+          <ScalarProperty Name="DetalletoxicomaniaMadre" ColumnName="DetalletoxicomaniaMadre" />
+          <ScalarProperty Name="AntecedenteMadre" ColumnName="AntecedenteMadre" />
+          <ScalarProperty Name="OtrosAntecedentesMadre" ColumnName="OtrosAntecedentesMadre" />
+          <ScalarProperty Name="SostenCefalico" ColumnName="SostenCefalico" />
+          <ScalarProperty Name="Ablactacion" ColumnName="Ablactacion" />
+          <ScalarProperty Name="Posicionsedente" ColumnName="Posicionsedente" />
+          <ScalarProperty Name="Destete" ColumnName="Destete" />
+          <ScalarProperty Name="Guarderia" ColumnName="Guarderia" />
+          <ScalarProperty Name="Jardin" ColumnName="Jardin" />
+          <ScalarProperty Name="Primaria" ColumnName="Primaria" />
+          <ScalarProperty Name="Secundaria" ColumnName="Secundaria" />
+          <ScalarProperty Name="Preparatoria" ColumnName="Preparatoria" />
+          <ScalarProperty Name="Urbanización" ColumnName="Urbanización" />
+          <ScalarProperty Name="TipodeVivienda" ColumnName="TipodeVivienda" />
+          <ScalarProperty Name="Cohabitantes" ColumnName="Cohabitantes" />
+          <ScalarProperty Name="caminarSinAyuda" ColumnName="caminarSinAyuda" />
+          <ScalarProperty Name="primerasilaba" ColumnName="primerasilaba" />
+          <ScalarProperty Name="primeraspalabras" ColumnName="primeraspalabras" />
+          <ScalarProperty Name="historialclinico" ColumnName="historialclinico" />
+          <ScalarProperty Name="otravacuna" ColumnName="otravacuna" />
+          <ScalarProperty Name="vacunaenfprev" ColumnName="vacunaenfprev" />
+          <ScalarProperty Name="vacunadosis" ColumnName="vacunadosis" />
+          <ScalarProperty Name="vacunaedad" ColumnName="vacunaedad" />
+          <ScalarProperty Name="vacunafecha" ColumnName="vacunafecha" />
+          <ScalarProperty Name="TrataDiagExclusivos" ColumnName="TrataDiagExclusivos" />
+          <ScalarProperty Name="consultas" ColumnName="consultas" />
+          <ScalarProperty Name="PreCta" ColumnName="PreCta" />
+          <ScalarProperty Name="preClave" ColumnName="preClave" />
+          <ScalarProperty Name="OtrasConsultas" ColumnName="OtrasConsultas" />
+          <ScalarProperty Name="mortinatos" ColumnName="mortinatos" />
+          <ScalarProperty Name="EdadGestal" ColumnName="EdadGestal" />
+          <ScalarProperty Name="tipoEdadGestal" ColumnName="tipoEdadGestal" />
+          <ScalarProperty Name="acepto" ColumnName="acepto" />
+          <ScalarProperty Name="ocupacion" ColumnName="ocupacion" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="EdadMenarca" ColumnName="EdadMenarca" />
+          <ScalarProperty Name="estadocivil" ColumnName="estadocivil" />
+          <ScalarProperty Name="menacmia" ColumnName="menacmia" />
+          <ScalarProperty Name="edadPrimerRelacionSexual" ColumnName="edadPrimerRelacionSexual" />
+          <ScalarProperty Name="ultimoPapanicolaou" ColumnName="ultimoPapanicolaou" />
+          <ScalarProperty Name="proximoPapanicolaou" ColumnName="proximoPapanicolaou" />
+          <ScalarProperty Name="estudiosGinecologicos" ColumnName="estudiosGinecologicos" />
+          <ScalarProperty Name="dispareunia" ColumnName="dispareunia" />
+          <ScalarProperty Name="leucorrea" ColumnName="leucorrea" />
+          <ScalarProperty Name="mencioneLeucorrea" ColumnName="mencioneLeucorrea" />
+          <ScalarProperty Name="lactorrea" ColumnName="lactorrea" />
+          <ScalarProperty Name="enfUteroOvarios" ColumnName="enfUteroOvarios" />
+          <ScalarProperty Name="mencioneEnfUteroOvarios" ColumnName="mencioneEnfUteroOvarios" />
+          <ScalarProperty Name="mamografia" ColumnName="mamografia" />
+          <ScalarProperty Name="fechaMamografia" ColumnName="fechaMamografia" />
+          <ScalarProperty Name="fechaProximaMamografia" ColumnName="fechaProximaMamografia" />
+          <ScalarProperty Name="procQuirurgico" ColumnName="procQuirurgico" />
+          <ScalarProperty Name="mencioneProcQuirurgico" ColumnName="mencioneProcQuirurgico" />
+          <ScalarProperty Name="observaciones" ColumnName="observaciones" />
+          <ScalarProperty Name="fechaUltimoParto" ColumnName="fechaUltimoParto" />
+          <ScalarProperty Name="ultimoDiaRegla" ColumnName="ultimoDiaRegla" />
+          <ScalarProperty Name="gestas" ColumnName="gestas" />
+          <ScalarProperty Name="partosNormales" ColumnName="partosNormales" />
+          <ScalarProperty Name="partosAnormales" ColumnName="partosAnormales" />
+          <ScalarProperty Name="cesareas" ColumnName="cesareas" />
+          <ScalarProperty Name="forceps" ColumnName="forceps" />
+          <ScalarProperty Name="abortos" ColumnName="abortos" />
+          <ScalarProperty Name="malformados" ColumnName="malformados" />
+          <ScalarProperty Name="recienNacidosEnfermos" ColumnName="recienNacidosEnfermos" />
+          <ScalarProperty Name="embarazoMultiple" ColumnName="embarazoMultiple" />
+          <ScalarProperty Name="obitos" ColumnName="obitos" />
+          <ScalarProperty Name="complicacionEmbarazo" ColumnName="complicacionEmbarazo" />
+          <ScalarProperty Name="complicacionParto" ColumnName="complicacionParto" />
+          <ScalarProperty Name="complicacionRecienNacido" ColumnName="complicacionRecienNacido" />
+          <ScalarProperty Name="complicacionLact" ColumnName="complicacionLact" />
+          <ScalarProperty Name="rnPesoAlto" ColumnName="rnPesoAlto" />
+          <ScalarProperty Name="prematuros" ColumnName="prematuros" />
+          <ScalarProperty Name="Curp" ColumnName="Curp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registro">
+      <EntityTypeMapping TypeName="EmeciModel.Registro">
+        <MappingFragment StoreEntitySet="Registro">
+          <ScalarProperty Name="idRegistro" ColumnName="idRegistro" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Domicilio" ColumnName="Domicilio" />
+          <ScalarProperty Name="Colonia" ColumnName="Colonia" />
+          <ScalarProperty Name="idCiudad" ColumnName="idCiudad" />
+          <ScalarProperty Name="idEstado" ColumnName="idEstado" />
+          <ScalarProperty Name="IdPais" ColumnName="IdPais" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="TelefonoCel" ColumnName="TelefonoCel" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="FechaRegistro" ColumnName="FechaRegistro" />
+          <ScalarProperty Name="FechaExpiracion" ColumnName="FechaExpiracion" />
+          <ScalarProperty Name="Emails" ColumnName="Emails" />
+          <ScalarProperty Name="FechaRenovacion" ColumnName="FechaRenovacion" />
+          <ScalarProperty Name="OtraCiudad" ColumnName="OtraCiudad" />
+          <ScalarProperty Name="NoExt" ColumnName="NoExt" />
+          <ScalarProperty Name="CodigoPostal" ColumnName="CodigoPostal" />
+          <ScalarProperty Name="clave" ColumnName="clave" />
+          <ScalarProperty Name="Emeci" ColumnName="Emeci" />
+          <ScalarProperty Name="apellido2" ColumnName="apellido2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

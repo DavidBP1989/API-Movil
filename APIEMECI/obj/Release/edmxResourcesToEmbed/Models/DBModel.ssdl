@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmeciModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="DatosTarjeta">
+    <Key>
+      <PropertyRef Name="iddatostarjeta" />
+    </Key>
+    <Property Name="noTarjeta" Type="nvarchar" MaxLength="15" />
+    <Property Name="Coordenada" Type="nvarchar" MaxLength="3" />
+    <Property Name="Dato" Type="nvarchar" MaxLength="3" />
+    <Property Name="iddatostarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Paciente">
+    <Key>
+      <PropertyRef Name="idPaciente" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" Nullable="false" />
+    <Property Name="Edad" Type="smallint" />
+    <Property Name="Sexo" Type="nvarchar" MaxLength="1" />
+    <Property Name="Escolaridad" Type="nvarchar(max)" />
+    <Property Name="idPaciente" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NoTarjeta" Type="nvarchar" MaxLength="50" />
+    <Property Name="grupoRH" Type="nvarchar" MaxLength="25" />
+    <Property Name="FechaNacimiento" Type="smalldatetime" />
+    <Property Name="HospitalNacer" Type="nvarchar" MaxLength="150" />
+    <Property Name="LugarNacer" Type="nvarchar" MaxLength="50" />
+    <Property Name="AbortosPrevios" Type="tinyint" />
+    <Property Name="PesoNacer" Type="real" />
+    <Property Name="TallaNacer" Type="real" />
+    <Property Name="PerCefalicoNacer" Type="real" />
+    <Property Name="AlergiaMedicina" Type="ntext" />
+    <Property Name="AlergiaOtros" Type="ntext" />
+    <Property Name="Patologia" Type="ntext" />
+    <Property Name="telefonooficina" Type="nvarchar" MaxLength="50" />
+    <Property Name="Etapa" Type="tinyint" />
+    <Property Name="TipoEscolaridad" Type="tinyint" />
+    <Property Name="otraescolaridad" Type="nvarchar" MaxLength="30" />
+    <Property Name="EmbarazoNo" Type="tinyint" />
+    <Property Name="TipoEmbarazo" Type="nvarchar" MaxLength="2" />
+    <Property Name="EmbarazoParto" Type="nvarchar" MaxLength="2" />
+    <Property Name="tipodistocia" Type="nvarchar" MaxLength="1" />
+    <Property Name="tipodistociamencione" Type="nvarchar(max)" />
+    <Property Name="motivodistocia" Type="nvarchar" MaxLength="1" />
+    <Property Name="motivodistociamencione" Type="nvarchar(max)" />
+    <Property Name="CalApgarMin" Type="tinyint" />
+    <Property Name="CalApgar5Min" Type="tinyint" />
+    <Property Name="CalSilverMin" Type="tinyint" />
+    <Property Name="CalSilver5Min" Type="tinyint" />
+    <Property Name="Tamizneonatal" Type="nvarchar" MaxLength="1" />
+    <Property Name="NoFolioTamiz" Type="nvarchar(max)" />
+    <Property Name="CompINM" Type="ntext" />
+    <Property Name="CompINMManejo" Type="ntext" />
+    <Property Name="CompMed" Type="ntext" />
+    <Property Name="CompMedManejo" Type="ntext" />
+    <Property Name="lactanciaMat" Type="nvarchar" MaxLength="1" />
+    <Property Name="tipolactancia" Type="nvarchar" MaxLength="1" />
+    <Property Name="nombreformula" Type="nvarchar(max)" />
+    <Property Name="motivoreduccion" Type="ntext" />
+    <Property Name="motivoSuspension" Type="ntext" />
+    <Property Name="fechaConsultaPed" Type="smalldatetime" />
+    <Property Name="AntecedentePerionatal" Type="ntext" />
+    <Property Name="rubeola" Type="nvarchar" MaxLength="3" />
+    <Property Name="sarampion" Type="nvarchar" MaxLength="3" />
+    <Property Name="tosferina" Type="nvarchar" MaxLength="3" />
+    <Property Name="roseola" Type="nvarchar" MaxLength="3" />
+    <Property Name="varicela" Type="nvarchar" MaxLength="3" />
+    <Property Name="EnfInfectocontagiosas" Type="ntext" />
+    <Property Name="EnfContagiosas" Type="char" MaxLength="12" />
+    <Property Name="EnfContagiosasyEvol" Type="ntext" />
+    <Property Name="NombrePadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="ApellPaternoPadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="ApellMaternoPadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="NacimientoPadre" Type="smalldatetime" />
+    <Property Name="EstadoCivilPadre" Type="int" />
+    <Property Name="EscolaridadPadre" Type="int" />
+    <Property Name="DetalleEscolaridadPadre" Type="nvarchar" MaxLength="50" />
+    <Property Name="SaludPadre" Type="tinyint" />
+    <Property Name="DetalleSaludPadre" Type="nvarchar" MaxLength="250" />
+    <Property Name="toxicomaniaPadre" Type="bit" />
+    <Property Name="DetalletoxicomaniaPadre" Type="ntext" />
+    <Property Name="AntecedentePadre" Type="char" MaxLength="8" />
+    <Property Name="OtrosAntecedentesPadre" Type="ntext" />
+    <Property Name="NombreMadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="ApellPaternoMadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="ApellMaternoMadre" Type="nvarchar" MaxLength="25" />
+    <Property Name="NacimientoMadre" Type="smalldatetime" />
+    <Property Name="EstadoCivilMadre" Type="int" />
+    <Property Name="EscolaridadMadre" Type="int" />
+    <Property Name="DetalleEscolaridadMadre" Type="nvarchar" MaxLength="50" />
+    <Property Name="SaludMadre" Type="tinyint" />
+    <Property Name="DetalleSaludMadre" Type="nvarchar" MaxLength="250" />
+    <Property Name="toxicomaniaMadre" Type="bit" />
+    <Property Name="DetalletoxicomaniaMadre" Type="ntext" />
+    <Property Name="AntecedenteMadre" Type="char" MaxLength="8" />
+    <Property Name="OtrosAntecedentesMadre" Type="ntext" />
+    <Property Name="SostenCefalico" Type="int" />
+    <Property Name="Ablactacion" Type="int" />
+    <Property Name="Posicionsedente" Type="int" />
+    <Property Name="Destete" Type="int" />
+    <Property Name="Guarderia" Type="int" />
+    <Property Name="Jardin" Type="int" />
+    <Property Name="Primaria" Type="int" />
+    <Property Name="Secundaria" Type="int" />
+    <Property Name="Preparatoria" Type="int" />
+    <Property Name="Urbanización" Type="int" />
+    <Property Name="TipodeVivienda" Type="int" />
+    <Property Name="Cohabitantes" Type="int" />
+    <Property Name="caminarSinAyuda" Type="int" />
+    <Property Name="primerasilaba" Type="int" />
+    <Property Name="primeraspalabras" Type="int" />
+    <Property Name="historialclinico" Type="ntext" />
+    <Property Name="otravacuna" Type="nvarchar" MaxLength="150" />
+    <Property Name="vacunaenfprev" Type="nvarchar" MaxLength="80" />
+    <Property Name="vacunadosis" Type="nvarchar" MaxLength="30" />
+    <Property Name="vacunaedad" Type="nvarchar" MaxLength="30" />
+    <Property Name="vacunafecha" Type="nvarchar" MaxLength="30" />
+    <Property Name="TrataDiagExclusivos" Type="ntext" />
+    <Property Name="consultas" Type="ntext" />
+    <Property Name="PreCta" Type="nvarchar" MaxLength="7" />
+    <Property Name="preClave" Type="nvarchar" MaxLength="7" />
+    <Property Name="OtrasConsultas" Type="ntext" />
+    <Property Name="mortinatos" Type="tinyint" />
+    <Property Name="EdadGestal" Type="tinyint" />
+    <Property Name="tipoEdadGestal" Type="tinyint" />
+    <Property Name="acepto" Type="bit" />
+    <Property Name="ocupacion" Type="nvarchar" MaxLength="60" />
+    <Property Name="religion" Type="nvarchar" MaxLength="30" />
+    <Property Name="EdadMenarca" Type="int" />
+    <Property Name="estadocivil" Type="int" />
+    <Property Name="menacmia" Type="int" />
+    <Property Name="edadPrimerRelacionSexual" Type="int" />
+    <Property Name="ultimoPapanicolaou" Type="smalldatetime" />
+    <Property Name="proximoPapanicolaou" Type="smalldatetime" />
+    <Property Name="estudiosGinecologicos" Type="nvarchar" MaxLength="300" />
+    <Property Name="dispareunia" Type="bit" />
+    <Property Name="leucorrea" Type="bit" />
+    <Property Name="mencioneLeucorrea" Type="nvarchar" MaxLength="250" />
+    <Property Name="lactorrea" Type="bit" />
+    <Property Name="enfUteroOvarios" Type="bit" />
+    <Property Name="mencioneEnfUteroOvarios" Type="nvarchar" MaxLength="250" />
+    <Property Name="mamografia" Type="bit" />
+    <Property Name="fechaMamografia" Type="smalldatetime" />
+    <Property Name="fechaProximaMamografia" Type="smalldatetime" />
+    <Property Name="procQuirurgico" Type="bit" />
+    <Property Name="mencioneProcQuirurgico" Type="nvarchar" MaxLength="800" />
+    <Property Name="observaciones" Type="nvarchar" MaxLength="800" />
+    <Property Name="fechaUltimoParto" Type="smalldatetime" />
+    <Property Name="ultimoDiaRegla" Type="smalldatetime" />
+    <Property Name="gestas" Type="int" />
+    <Property Name="partosNormales" Type="int" />
+    <Property Name="partosAnormales" Type="int" />
+    <Property Name="cesareas" Type="int" />
+    <Property Name="forceps" Type="int" />
+    <Property Name="abortos" Type="int" />
+    <Property Name="malformados" Type="int" />
+    <Property Name="recienNacidosEnfermos" Type="int" />
+    <Property Name="embarazoMultiple" Type="int" />
+    <Property Name="obitos" Type="int" />
+    <Property Name="complicacionEmbarazo" Type="nvarchar" MaxLength="800" />
+    <Property Name="complicacionParto" Type="nvarchar" MaxLength="800" />
+    <Property Name="complicacionRecienNacido" Type="nvarchar" MaxLength="800" />
+    <Property Name="complicacionLact" Type="nvarchar" MaxLength="800" />
+    <Property Name="rnPesoAlto" Type="int" />
+    <Property Name="prematuros" Type="int" />
+    <Property Name="Curp" Type="varchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Registro">
+    <Key>
+      <PropertyRef Name="idRegistro" />
+    </Key>
+    <Property Name="idRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="50" />
+    <Property Name="Apellido" Type="nvarchar" MaxLength="50" />
+    <Property Name="Domicilio" Type="nvarchar" MaxLength="150" />
+    <Property Name="Colonia" Type="nvarchar" MaxLength="150" />
+    <Property Name="idCiudad" Type="int" />
+    <Property Name="idEstado" Type="nvarchar" MaxLength="2" />
+    <Property Name="IdPais" Type="nvarchar" MaxLength="2" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="50" />
+    <Property Name="TelefonoCel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Tipo" Type="nvarchar" MaxLength="1" />
+    <Property Name="Status" Type="nvarchar" MaxLength="1" />
+    <Property Name="IdUsuario" Type="nvarchar" MaxLength="25" />
+    <Property Name="FechaRegistro" Type="smalldatetime" />
+    <Property Name="FechaExpiracion" Type="smalldatetime" />
+    <Property Name="Emails" Type="nvarchar" MaxLength="150" />
+    <Property Name="FechaRenovacion" Type="smalldatetime" />
+    <Property Name="OtraCiudad" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoExt" Type="nvarchar" MaxLength="5" />
+    <Property Name="CodigoPostal" Type="nvarchar" MaxLength="5" />
+    <Property Name="clave" Type="nvarchar" MaxLength="15" />
+    <Property Name="Emeci" Type="nvarchar" MaxLength="15" />
+    <Property Name="apellido2" Type="nvarchar" MaxLength="25" />
+  </EntityType>
+  <EntityContainer Name="EmeciModelStoreContainer">
+    <EntitySet Name="DatosTarjeta" EntityType="Self.DatosTarjeta" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Paciente" EntityType="Self.Paciente" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Registro" EntityType="Self.Registro" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
